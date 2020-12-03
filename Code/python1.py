@@ -69,7 +69,7 @@ def one(input1, input2):
 #	input.casefold()
 #	x = input.split("bert")
 #	return ""
-#
+
 #two("bertclivebert") 
 
 
@@ -168,10 +168,13 @@ def three(arg1):
 
 	# help(str) and help(list), you might also need to use a function that can create a list of numbers for you, try help(range).
 
-#def five(input):
-#	substring = "False"
-#	if substring in input:
-#		return input.split(",")[0]
+def five(input):
+	substring1 = "False"
+	substring2 = "True"
+	if substring1 in input:
+		return input.split(",")[0]
+	if substring2 in input: 
+		return Jeff
  
 
 	# <QUESTION 6>
