@@ -35,10 +35,13 @@
 	# What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
 def one(input1, input2):
-	return ""
-
-
-
+	if len(input1) > len(input2):
+		return input1
+	if len(input2) > len(input1):
+		return input2
+	else: 
+		return input1 + " " + input2
+ 
 
 	# <QUESTION 2>
 
@@ -62,10 +65,12 @@ def one(input1, input2):
 	
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
-def two(input):
-	return ""
-
-
+#def two(input):
+#	input.casefold()
+#	x = input.split("bert")
+#	return ""
+#
+#two("bertclivebert") 
 
 
 	# <QUESTION 3>
@@ -88,7 +93,19 @@ def two(input):
 	# No Hints for this question
 
 def three(arg1):
-	return "null"
+	if arg1 % 3 == 0:
+		return "fizz"
+	if arg1 % 5 == 0:
+		return "buzz"
+	if arg1 % 3 == 0 and arg1 % 5 == 0:
+		return "fizzbuzz"
+	else:
+		return "null"
+
+#print(three(3))
+#print(three(10)) 
+#print(three(15))
+#print(three(8))
 
 
 	# <QUESTION 4>
@@ -113,8 +130,18 @@ def three(arg1):
 
 	# help(int) for working with numbers and help(str) for working with Strings.
 
-def four(arg1):
-	return 0
+#def four(arg1):
+#	a = arg1.split(" ")
+#	for i in range(0, len(a)): 
+ #   	a[i] = int(a[i])
+#	for i in a:
+#		sum(digit)
+#	return 0
+
+#arg1.split(" ") 
+	#a = int(arg1[0][0]) + int(arg1[0][1])
+
+
 
 	# <QUESTION 5>
 
@@ -141,8 +168,11 @@ def four(arg1):
 
 	# help(str) and help(list), you might also need to use a function that can create a list of numbers for you, try help(range).
 
-def five(input):
-	return []
+#def five(input):
+#	substring = "False"
+#	if substring in input:
+#		return input.split(",")[0]
+ 
 
 	# <QUESTION 6>
 
@@ -163,7 +193,17 @@ def five(input):
 
 
 def six(input):
-    return False
+	if "ie" in input:
+		if "cie" in input:
+			return False
+	if "ei" in input:
+		if "cei" in input:
+			return True 
+	if "ie" in input: 
+		return True
+	if "ei" in input:
+		return False
+    
 
 	# <QUESTION 7>
 
@@ -180,7 +220,40 @@ def six(input):
 	# How do we ignore case in a String? help(str) may offer some insight.
 
 def seven(input):
-    return 0
+    a = "a"
+    A = "A"
+    e = "e"
+    E = "E"
+    i = "i"
+    I = "I"
+    o = "o"
+    O = "O"
+    u = "u"
+    U = "U"
+    acount = 0
+    ecount = 0
+    icount = 0
+    ocount = 0
+    ucount = 0
+    total = 0
+
+    if A or a in stri :
+        acount = acount + 1
+
+    if E or e in stri :
+        ecount = ecount + 1
+
+    if I or i in stri :
+        icount = icount + 1
+
+    if o or O in stri :
+        ocount = ocount + 1
+
+    if u or U in stri :
+        ucount = ucount + 1
+
+    total = acount + ecount + icount + ocount + ucount
+    return total
 
 	# <QUESTION 8>
 
