@@ -239,20 +239,26 @@ def seven(input):
 
     if A or a in stri :
         acount = acount + 1
-
+        if acount == 1:
+            acount = 0
     if E or e in stri :
         ecount = ecount + 1
-
+        if ecount == 1:
+            acount = 0
     if I or i in stri :
         icount = icount + 1
-
+        if icount == 1:
+            icount = 0
     if o or O in stri :
         ocount = ocount + 1
-
+        if ocount == 1:
+            ocount = 0
     if u or U in stri :
         ucount = ucount + 1
-
-    total = acount + ecount + icount + ocount + ucount
+        if ucount == 1:
+            ucount = 0
+            
+    total = acount + ecount + icount + ocount + ucount + 1
     return total
 
 	# <QUESTION 8>
@@ -271,7 +277,11 @@ def seven(input):
 	# You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def eight(input):
-	return 1
+    if input == 0:
+        return 1
+    else:
+        return input * eight(input-1)
+
 
 	# <QUESTION 9>
 
